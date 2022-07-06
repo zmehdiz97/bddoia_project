@@ -6,6 +6,10 @@ MODEL:
     POST_NMS_TOP_N_TEST: 1000
   ROI_BOX_HEAD:
     NUM_CLASSES: 11
+  SIDE: True 
+  ROI_HEADS:
+    SCORE_THRESH: 0.4 
+  PREDICTOR_NUM: 1
 DATASETS:
   TRAIN: ("bdd12k_action_train",)
   TEST: ("bdd12k_action_test",)

@@ -83,7 +83,7 @@ class PostProcessor(nn.Module):
             class_prob, proposals, image_shapes
         ):
             boxlist = self.prepare_boxlist(boxes_per_img, prob, image_shape)
-            boxlist = boxlist.clip_to_image(remove_empty=False)
+            #boxlist = boxlist.clip_to_image(remove_empty=False)
             if not self.bbox_aug_enabled:  # If bbox aug is enabled, we will do it later
                 boxlist, idx = self.filter_results(boxlist, num_classes)
             results.append(boxlist)

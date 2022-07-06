@@ -1,5 +1,291 @@
-Namespace(config_file='/root/workspace/bddoia_project/maskrcnn/maskrcnn-benchmark/configs/baseline.yaml', is_cat=False, side=False, opts=['MODEL.SIDE', 'True', 'MODEL.ROI_HEADS.SCORE_THRESH', '0.4', 'MODEL.PREDICTOR_NUM', '1', 'OUTPUT_DIR', 'output-directory', 'MODEL.META_ARCHITECTURE', 'Baseline1'], imageroot='/datasets_local/bdd-oia/lastframe/data', gtroot='/datasets_local/bdd-oia/lastframe/test_25k_images_actions.json', reasonroot='/datasets_local/bdd-oia/lastframe/test_25k_images_reasons.json', imWidth=1280, imHeight=720, batch_size=1, model_root='/root/workspace/bddoia_project/net_Final.pth', output_dir='./output/')
+Namespace(config_file='/root/workspace/bddoia_project/maskrcnn/maskrcnn-benchmark/configs/baseline.yaml', is_cat=False, side=False, opts=['OUTPUT_DIR', 'output-directory', 'MODEL.META_ARCHITECTURE', 'Baseline1'], imageroot='/datasets_local/bdd-oia/lastframe/data', gtroot='/datasets_local/bdd-oia/lastframe/test_25k_images_actions.json', reasonroot='/datasets_local/bdd-oia/lastframe/test_25k_images_reasons.json', imWidth=1280, imHeight=720, batch_size=1, model_root='/root/workspace/bddoia_project/net_Final.pth', output_dir='./output/')
 Iter 0
+prediction logits:tensor([[ 0.6867, -0.7304,  0.1840, -2.2657]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+
+Iter 1
+prediction logits:tensor([[ 0.2114,  0.1057,  0.1640, -0.6268]], device='cuda:0')
+prediction action: 
+ tensor([[ True,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 2
+prediction logits:tensor([[ 2.7791, -2.9103, -0.5317,  1.8162]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 3
+prediction logits:tensor([[ 1.3382, -0.9189, -4.9289,  1.6773]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 4
+prediction logits:tensor([[ 1.7610, -2.2615,  0.4556, -0.1370]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+
+Iter 5
+prediction logits:tensor([[ 1.6455, -1.3713, -0.3159,  1.3471]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+
+Iter 6
+prediction logits:tensor([[-0.9677,  0.8479, -0.7156, -0.1975]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 7
+prediction logits:tensor([[-1.1118,  1.0072, -2.1101, -0.8906]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0. 0. 0. 0.]]
+
+Iter 8
+prediction logits:tensor([[-0.0200,  0.3307, -3.1149, -1.5514]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+
+Iter 9
+prediction logits:tensor([[ 1.5989, -1.4872, -2.1685,  0.6595]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+
+Iter 10
+prediction logits:tensor([[-1.1550,  1.1680, -3.6977,  0.8598]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+          True, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+
+Iter 11
+prediction logits:tensor([[-1.1518,  1.0146, -0.8409, -0.1788]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.]]
+
+Iter 12
+prediction logits:tensor([[-0.5513,  0.3401, -0.3363,  0.1181]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False, False,  True, False, False, False, False,  True, False, False,
+          True, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 13
+prediction logits:tensor([[-2.3044,  2.4967, -0.8604, -2.2309]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 14
+prediction logits:tensor([[ 0.4043, -0.8768,  0.0089, -0.8072]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False,  True, False, False, False, False,  True, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 15
+prediction logits:tensor([[-3.8934,  4.1636, -1.3444, -0.5079]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0.]]
+
+Iter 16
+prediction logits:tensor([[-1.6098,  1.4744, -1.4510, -0.6650]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+          True, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 17
+prediction logits:tensor([[-0.4108,  0.3790, -1.2516, -0.6580]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+          True, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 18
+prediction logits:tensor([[ 1.3095, -1.7060,  0.9043, -0.5432]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 19
+prediction logits:tensor([[ 0.7929, -0.6564, -0.9392,  0.7938]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 20
+prediction logits:tensor([[-5.7975,  6.4551, -3.4765, -0.8911]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False, False, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1.]]
+
+Iter 21
+prediction logits:tensor([[-1.6516,  1.7209,  0.1466, -2.0693]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 22
 prediction logits:tensor([[ 2.5715, -2.6006,  0.6973, -1.3361]], device='cuda:0')
 prediction action: 
  tensor([[ True, False,  True, False]], device='cuda:0')
@@ -12,8 +298,762 @@ prediction reason:
 ground truth: 
 [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0.]]
 
-Iter 1
-prediction logits:tensor([[ 0.6767, -0.5266, -2.9754,  0.7332]], device='cuda:0')
+Iter 23
+prediction logits:tensor([[ 1.8571, -2.2081, -0.3158,  1.1045]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+
+Iter 24
+prediction logits:tensor([[-5.3587,  5.6194, -1.1973, -1.0623]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]]
+
+Iter 25
+prediction logits:tensor([[ 4.3041, -4.2362,  2.7874,  1.2961]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 26
+prediction logits:tensor([[-0.0754, -0.0045, -1.3566,  1.2721]], device='cuda:0')
+prediction action: 
+ tensor([[False, False, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 27
+prediction logits:tensor([[-2.2305,  2.2187, -0.6277, -0.4799]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 28
+prediction logits:tensor([[-0.3333, -0.0962, -0.1699, -0.6047]], device='cuda:0')
+prediction action: 
+ tensor([[False, False, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.]]
+
+Iter 29
+prediction logits:tensor([[ 1.6733, -1.4663, -1.1206, -0.4097]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 1. 0. 0.]]
+
+Iter 30
+prediction logits:tensor([[ 1.5079, -1.2795, -1.2131, -1.9374]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 31
+prediction logits:tensor([[ 3.2473, -3.4730,  1.0185,  1.3030]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 32
+prediction logits:tensor([[ 0.2787, -0.0562, -0.6423,  1.3914]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0.]]
+
+Iter 33
+prediction logits:tensor([[-2.8809,  3.0580, -0.3416, -1.9999]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 34
+prediction logits:tensor([[ 1.8971, -2.0745,  0.8727,  0.8240]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+
+Iter 35
+prediction logits:tensor([[ 0.5720, -0.7232, -1.3174, -4.8602]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 36
+prediction logits:tensor([[ 0.8499, -0.6331, -1.5726,  0.1687]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+
+Iter 37
+prediction logits:tensor([[ 0.6782, -0.4181, -2.2374,  2.3842]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+
+Iter 38
+prediction logits:tensor([[-0.2154,  0.0533, -0.4693, -2.1571]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+          True, False, False,  True,  True, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 39
+prediction logits:tensor([[ 0.8066, -0.9324, -2.5402, -0.4071]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0.]]
+
+Iter 40
+prediction logits:tensor([[ 0.7414, -1.0006, -1.6316,  0.7151]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0. 1. 0.]]
+
+Iter 41
+prediction logits:tensor([[ 1.1958, -1.0504, -0.3545, -2.7247]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0.]]
+
+Iter 42
+prediction logits:tensor([[ 1.5569, -1.5083,  1.7674, -0.5728]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+
+Iter 43
+prediction logits:tensor([[-8.8060,  9.3656, -4.5433, -2.6589]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 44
+prediction logits:tensor([[ 1.8960, -1.5992,  0.5319, -0.0205]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 45
+prediction logits:tensor([[-4.3747,  4.8002, -3.3418, -1.6615]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False, False,  True, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+
+Iter 46
+prediction logits:tensor([[ 1.5205, -1.4917,  1.3595, -2.0630]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 47
+prediction logits:tensor([[-6.5712,  7.0998, -3.3520, -3.3857]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False, False,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 48
+prediction logits:tensor([[ 0.6386, -0.9715, -0.3696,  0.2050]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+          True,  True, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 49
+prediction logits:tensor([[-2.5012,  2.7678, -2.8969, -3.2752]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0.]]
+
+Iter 50
+prediction logits:tensor([[-1.8496,  2.1774, -3.2575, -4.7728]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0.]]
+
+Iter 51
+prediction logits:tensor([[ 0.1567, -0.2704,  0.2783, -1.2027]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 52
+prediction logits:tensor([[-0.0443,  0.2305,  0.2612, -1.1915]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 53
+prediction logits:tensor([[-1.2712,  1.3476,  0.0297, -2.9350]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0.]]
+
+Iter 54
+prediction logits:tensor([[ 2.0252, -2.2990, -0.8535,  1.0649]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False, False,  True, False, False, False, False, False, False, False,
+          True, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+
+Iter 55
+prediction logits:tensor([[-5.5698,  5.8265, -2.3150, -2.0877]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 56
+prediction logits:tensor([[ 3.3324, -3.4063,  0.7330,  1.4071]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 57
+prediction logits:tensor([[-0.2977,  0.0542, -1.4398, -0.5236]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+          True,  True, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 1. 0.]]
+
+Iter 58
+prediction logits:tensor([[-1.3293,  1.2767, -0.5569, -0.9427]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 59
+prediction logits:tensor([[ 0.9746, -1.2757,  0.9060, -0.9231]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[False, False, False, False, False, False, False, False, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 60
+prediction logits:tensor([[ 1.0937, -1.3953,  0.6195,  0.4237]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0.]]
+prediction reason: 
+ tensor([[False, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 61
+prediction logits:tensor([[ 1.0743, -1.2199,  0.9635, -0.8018]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False,  True, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 62
+prediction logits:tensor([[ 2.8623, -2.8299,  1.8787, -1.0559]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 63
+prediction logits:tensor([[ 1.8554, -2.1002,  1.0754,  2.2307]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+
+Iter 64
+prediction logits:tensor([[ 3.7514, -3.9398,  1.9355,  2.4409]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 65
+prediction logits:tensor([[-5.4945,  5.9265, -3.0746, -1.7772]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False, False,  True, False,  True, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 66
+prediction logits:tensor([[-2.7103,  2.9723, -0.7312,  0.1274]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 1.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 67
+prediction logits:tensor([[ 0.6054, -0.8671,  0.0237,  0.9717]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+
+Iter 68
+prediction logits:tensor([[ 2.8855, -2.8684, -3.4436,  0.8942]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 69
+prediction logits:tensor([[-0.7171,  0.7253, -0.7220, -1.8038]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False, False,  True, False, False, False, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 70
+prediction logits:tensor([[-1.5881,  1.7394, -0.2047, -0.4535]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 71
+prediction logits:tensor([[-5.0372,  5.3523, -2.3133, -2.2454]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 72
+prediction logits:tensor([[ 0.4357, -0.2013, -4.0837, -1.7781]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 73
+prediction logits:tensor([[-0.6718,  0.9640, -1.8927, -1.0648]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 74
+prediction logits:tensor([[-0.6166,  0.3917,  0.0699,  0.2596]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 75
+prediction logits:tensor([[ 1.3771, -1.7205,  1.6475, -0.9889]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 76
+prediction logits:tensor([[ 0.9998, -1.1196,  0.3241,  0.2814]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1.]]
+
+Iter 77
+prediction logits:tensor([[ 1.5429, -1.5378,  0.5724, -1.1608]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 78
+prediction logits:tensor([[ 1.4233, -1.6304,  1.0941, -0.2798]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+
+Iter 79
+prediction logits:tensor([[ 2.8261, -3.0539,  1.6979,  1.4845]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 80
+prediction logits:tensor([[ 1.6771, -1.7531,  0.9463, -0.4267]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 81
+prediction logits:tensor([[ 2.5189, -2.4142, -1.1905,  0.9604]], device='cuda:0')
 prediction action: 
  tensor([[ True, False, False,  True]], device='cuda:0')
 ground truth: 
@@ -25,127 +1065,10 @@ prediction reason:
 ground truth: 
 [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
 
-Iter 2
-prediction logits:tensor([[-2.3269,  2.6417, -2.0177,  1.0244]], device='cuda:0')
+Iter 82
+prediction logits:tensor([[ 0.7130, -0.8459,  1.2116, -2.4583]], device='cuda:0')
 prediction action: 
- tensor([[False,  True, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 1.]]
-prediction reason: 
- tensor([[ True, False, False,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
-
-Iter 3
-prediction logits:tensor([[-1.1305,  0.8882, -2.2251, -1.9359]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[False,  True, False, False, False, False, False, False,  True, False,
-          True, False, False,  True, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 1. 0. 1. 1. 0. 1.]]
-
-Iter 4
-prediction logits:tensor([[-0.5163,  0.5998, -0.1551,  0.4842]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False,  True]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-
-Iter 5
-prediction logits:tensor([[-0.9295,  0.8238, -1.6308, -2.5033]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[False,  True, False, False,  True, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-
-Iter 6
-prediction logits:tensor([[ 3.3721, -3.1685, -0.9128, -0.8381]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False, False]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 0.]]
-prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1.]]
-
-Iter 7
-prediction logits:tensor([[-0.6940,  0.5981, -1.1164,  0.7216]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 1.]]
-prediction reason: 
- tensor([[ True, False, False,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 0.]]
-
-Iter 8
-prediction logits:tensor([[-0.9759,  1.1446, -0.6162, -0.9411]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False,  True, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
-
-Iter 9
-prediction logits:tensor([[ 4.6917, -4.7106, -2.7039,  3.4614]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 1.]]
-prediction reason: 
- tensor([[ True, False, False,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
-
-Iter 10
-prediction logits:tensor([[-5.7851,  6.1611, -3.3943, -2.8978]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[False,  True,  True, False, False, False, False,  True, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1.]]
-
-Iter 11
-prediction logits:tensor([[ 0.9499, -1.3005,  0.6644,  0.4029]], device='cuda:0')
-prediction action: 
- tensor([[ True, False,  True,  True]], device='cuda:0')
+ tensor([[ True, False,  True, False]], device='cuda:0')
 ground truth: 
 [[1. 0. 0. 0.]]
 prediction reason: 
@@ -153,51 +1076,77 @@ prediction reason:
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0.]]
 
-Iter 12
-prediction logits:tensor([[ 3.5932, -3.7546,  0.8625,  1.0024]], device='cuda:0')
+Iter 83
+prediction logits:tensor([[-0.7528,  0.6305,  0.0659,  0.0118]], device='cuda:0')
 prediction action: 
- tensor([[ True, False,  True,  True]], device='cuda:0')
+ tensor([[False,  True,  True,  True]], device='cuda:0')
 ground truth: 
-[[1. 0. 1. 1.]]
+[[0. 1. 0. 1.]]
 prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+ tensor([[ True, False, False, False, False, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 84
+prediction logits:tensor([[ 0.4570, -0.5181, -2.3328, -1.5311]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+
+Iter 85
+prediction logits:tensor([[-1.8607,  2.2282, -1.4628, -3.3317]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 1.]]
+
+Iter 86
+prediction logits:tensor([[-3.7658,  4.1938, -0.0138, -3.5190]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
 [[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
 
-Iter 13
-prediction logits:tensor([[ 1.8413, -1.9381,  1.0687,  0.6154]], device='cuda:0')
+Iter 87
+prediction logits:tensor([[ 0.7121, -0.6437,  1.0950, -0.3278]], device='cuda:0')
 prediction action: 
- tensor([[ True, False,  True,  True]], device='cuda:0')
+ tensor([[ True, False,  True, False]], device='cuda:0')
 ground truth: 
-[[0. 1. 0. 0.]]
+[[0. 1. 1. 0.]]
 prediction reason: 
- tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
 
-Iter 14
-prediction logits:tensor([[ 0.5471, -0.1516, -0.1669, -1.6730]], device='cuda:0')
+Iter 88
+prediction logits:tensor([[ 2.2155, -2.0517,  0.0804, -3.2896]], device='cuda:0')
 prediction action: 
- tensor([[ True, False, False, False]], device='cuda:0')
-ground truth: 
-[[1. 0. 1. 0.]]
-prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
-
-Iter 15
-prediction logits:tensor([[ 3.2908, -3.3189,  2.4321,  2.3262]], device='cuda:0')
-prediction action: 
- tensor([[ True, False,  True,  True]], device='cuda:0')
+ tensor([[ True, False,  True, False]], device='cuda:0')
 ground truth: 
 [[1. 0. 1. 1.]]
 prediction reason: 
@@ -207,112 +1156,21 @@ prediction reason:
 ground truth: 
 [[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
 
-Iter 16
-prediction logits:tensor([[ 0.1230, -0.5271, -0.3590, -0.3257]], device='cuda:0')
+Iter 89
+prediction logits:tensor([[ 0.1941, -0.2178,  1.2719, -2.1387]], device='cuda:0')
 prediction action: 
- tensor([[ True, False, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[False,  True, False, False, False, False, False, False,  True, False,
-         False, False, False,  True, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-
-Iter 17
-prediction logits:tensor([[ 0.1689, -0.6853, -0.4166,  0.2672]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 1.]]
-prediction reason: 
- tensor([[False,  True, False,  True, False, False, False, False, False, False,
-         False, False, False,  True, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]]
-
-Iter 18
-prediction logits:tensor([[ 1.0204, -1.4666,  0.6379,  0.9912]], device='cuda:0')
-prediction action: 
- tensor([[ True, False,  True,  True]], device='cuda:0')
+ tensor([[ True, False,  True, False]], device='cuda:0')
 ground truth: 
 [[1. 0. 0. 0.]]
-prediction reason: 
- tensor([[False, False,  True, False, False, False, False,  True, False, False,
-          True, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-
-Iter 19
-prediction logits:tensor([[ 1.4441, -1.4142, -0.1917,  0.3179]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 1. 0.]]
-prediction reason: 
- tensor([[ True, False,  True,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[1. 0. 1. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
-
-Iter 20
-prediction logits:tensor([[ 0.5638, -0.3191, -1.5913, -1.7492]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
 prediction reason: 
  tensor([[ True, False, False,  True, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0.]]
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
 
-Iter 21
-prediction logits:tensor([[-2.6028,  3.0774, -2.3335, -0.7938]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[ True, False, False, False, False, False, False,  True, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0.]]
-
-Iter 22
-prediction logits:tensor([[ 0.7834, -0.6717, -2.0704,  0.2434]], device='cuda:0')
-prediction action: 
- tensor([[ True, False, False,  True]], device='cuda:0')
-ground truth: 
-[[1. 0. 0. 0.]]
-prediction reason: 
- tensor([[ True, False, False, False, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
-
-Iter 23
-prediction logits:tensor([[-1.6292,  2.0613, -4.8054, -4.8368]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[ True, False, False,  True, False, False, False, False, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
-
-Iter 24
-prediction logits:tensor([[-2.7850,  3.0067, -1.0329, -0.9013]], device='cuda:0')
+Iter 90
+prediction logits:tensor([[-5.7638,  6.1514, -2.5801, -2.8032]], device='cuda:0')
 prediction action: 
  tensor([[False,  True, False, False]], device='cuda:0')
 ground truth: 
@@ -322,10 +1180,49 @@ prediction reason:
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0. 1. 0. 0. 1. 0.]]
+[[0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
 
-Iter 25
-prediction logits:tensor([[ 1.7309, -1.9577,  0.8067, -1.7391]], device='cuda:0')
+Iter 91
+prediction logits:tensor([[ 3.3625, -3.5432,  0.4910,  1.4476]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[False, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 92
+prediction logits:tensor([[ 4.4989, -4.7077,  2.2821,  0.9879]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 93
+prediction logits:tensor([[ 1.0155, -0.8201, -2.6146, -1.0284]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 1.]]
+
+Iter 94
+prediction logits:tensor([[ 2.6715, -2.9844,  1.4911, -1.7180]], device='cuda:0')
 prediction action: 
  tensor([[ True, False,  True, False]], device='cuda:0')
 ground truth: 
@@ -337,55 +1234,523 @@ prediction reason:
 ground truth: 
 [[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
 
-Iter 26
-prediction logits:tensor([[ 0.2038, -0.5938,  0.1132, -0.2172]], device='cuda:0')
+Iter 95
+prediction logits:tensor([[-5.5254,  5.8404, -2.5041, -1.6590]], device='cuda:0')
 prediction action: 
- tensor([[ True, False,  True, False]], device='cuda:0')
+ tensor([[False,  True, False, False]], device='cuda:0')
 ground truth: 
-[[0. 0. 1. 0.]]
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0.]]
+
+Iter 96
+prediction logits:tensor([[ 0.5212, -0.5580, -1.1114,  0.4369]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
 prediction reason: 
  tensor([[ True, False, False,  True, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
 
-Iter 27
-prediction logits:tensor([[ 2.3812, -2.3548, -3.8638, -4.7782]], device='cuda:0')
+Iter 97
+prediction logits:tensor([[ 1.3677, -1.3441,  1.3934, -0.8048]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 98
+prediction logits:tensor([[ 1.0235, -0.7597, -0.3321, -0.2588]], device='cuda:0')
 prediction action: 
  tensor([[ True, False, False, False]], device='cuda:0')
 ground truth: 
-[[1. 0. 0. 0.]]
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 99
+prediction logits:tensor([[ 3.8932, -4.1784,  0.3602,  2.2809]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[False, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 100
+prediction logits:tensor([[ 1.7631, -2.0079, -1.2193, -0.9894]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
 prediction reason: 
  tensor([[False,  True, False, False, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0.]]
 
-Iter 28
-prediction logits:tensor([[-4.6069,  4.6080, -2.1427, -0.1840]], device='cuda:0')
+Iter 101
+prediction logits:tensor([[ 1.3025, -0.9295, -4.7825,  1.8538]], device='cuda:0')
 prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
+ tensor([[ True, False, False,  True]], device='cuda:0')
 ground truth: 
-[[0. 1. 0. 0.]]
-prediction reason: 
- tensor([[False, False, False, False, False, False, False,  True, False, False,
-         False, False, False, False, False, False, False, False, False, False,
-         False]], device='cuda:0')
-ground truth: 
-[[0. 0. 0. 1. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
-
-Iter 29
-prediction logits:tensor([[-0.0207,  0.1254, -0.0433, -1.1001]], device='cuda:0')
-prediction action: 
- tensor([[False,  True, False, False]], device='cuda:0')
-ground truth: 
-[[0. 1. 1. 0.]]
+[[1. 0. 0. 1.]]
 prediction reason: 
  tensor([[ True, False, False,  True, False, False, False, False, False, False,
          False, False, False, False, False, False, False, False, False, False,
          False]], device='cuda:0')
 ground truth: 
-[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0. 0.]]
+
+Iter 102
+prediction logits:tensor([[ 2.4841, -2.4552, -1.5052, -0.6235]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 1.]]
+
+Iter 103
+prediction logits:tensor([[-3.2865,  3.4442, -1.7808, -1.5201]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False, False,  True, False,  True, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 104
+prediction logits:tensor([[-0.1712,  0.0040, -3.0334, -4.0178]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 1.]]
+
+Iter 105
+prediction logits:tensor([[-0.3849,  0.2696,  0.1806, -1.0791]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 106
+prediction logits:tensor([[ 1.5172, -1.8967, -0.0793, -0.2335]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+          True, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 107
+prediction logits:tensor([[ 3.8154, -4.0658,  1.9239,  1.6429]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 108
+prediction logits:tensor([[ 0.5273, -0.2194, -3.6775, -0.8295]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 1. 0. 0.]]
+
+Iter 109
+prediction logits:tensor([[-3.9626,  3.9781, -2.1133, -1.9478]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 110
+prediction logits:tensor([[-1.3523,  0.8195, -1.2988, -0.0535]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+          True, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 111
+prediction logits:tensor([[ 0.4285, -0.5092, -0.5432,  0.2457]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True,  True, False, False, False, False, False,
+          True, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
+
+Iter 112
+prediction logits:tensor([[-0.9702,  0.7677, -0.1464,  0.1912]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 113
+prediction logits:tensor([[ 3.8011, -3.9059,  1.2501,  1.2780]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 114
+prediction logits:tensor([[ 0.7592, -0.9278,  0.3222, -0.1794]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 115
+prediction logits:tensor([[ 1.6311, -1.4824, -3.5971,  0.2098]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0.]]
+
+Iter 116
+prediction logits:tensor([[ 3.4726, -3.3798, -0.2675,  0.2593]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[ True, False,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 117
+prediction logits:tensor([[ 0.7645, -1.0134,  0.0249,  0.7868]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 118
+prediction logits:tensor([[ 1.7644, -1.5874,  1.4885,  0.3505]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 119
+prediction logits:tensor([[-0.4975,  0.5218,  1.4923, -1.7883]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 120
+prediction logits:tensor([[ 1.4302, -1.4204,  1.6762,  0.8177]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False,  True,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 121
+prediction logits:tensor([[ 0.2166, -0.6320, -0.1815, -0.0998]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]]
+
+Iter 122
+prediction logits:tensor([[ 0.6415, -0.8727,  0.9136, -1.0113]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False, False, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]]
+
+Iter 123
+prediction logits:tensor([[-2.4110,  2.7607, -2.7987, -1.6004]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]]
+
+Iter 124
+prediction logits:tensor([[ 1.0792, -1.2683, -0.3462, -0.2306]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]]
+
+Iter 125
+prediction logits:tensor([[ 3.9677, -3.9268, -1.9658, -0.5525]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+
+Iter 126
+prediction logits:tensor([[ 1.5948, -1.3007, -0.3426, -3.2762]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1.]]
+
+Iter 127
+prediction logits:tensor([[-3.0224,  3.1023, -1.7985,  0.0200]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0.]]
+
+Iter 128
+prediction logits:tensor([[ 2.0371, -2.3707, -0.2784,  0.7622]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False, False,  True, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 129
+prediction logits:tensor([[-6.3218,  6.6030, -3.1468, -4.1595]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True, False, False]], device='cuda:0')
+ground truth: 
+[[0. 1. 0. 0.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False,  True, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 1.]]
+
+Iter 130
+prediction logits:tensor([[-2.9553,  3.0439,  0.7918,  0.0581]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True,  True]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0.]]
+prediction reason: 
+ tensor([[False,  True, False, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]]
+
+Iter 131
+prediction logits:tensor([[-2.2963,  2.3761,  0.3667, -1.1616]], device='cuda:0')
+prediction action: 
+ tensor([[False,  True,  True, False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0.]]
+prediction reason: 
+ tensor([[ True, False, False,  True, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0.]]
+
+Iter 132
+prediction logits:tensor([[ 1.2836, -1.2229,  1.0693,  0.4025]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False,  True, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
+
+Iter 133
+prediction logits:tensor([[ 1.3252, -1.7338,  0.2566,  0.2786]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False,  True,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 1. 1.]]
+prediction reason: 
+ tensor([[False,  True,  True, False, False, False, False, False, False, False,
+          True,  True, False,  True,  True, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0.]]
+
+Iter 134
+prediction logits:tensor([[ 2.2442, -2.2309, -3.1360,  1.7663]], device='cuda:0')
+prediction action: 
+ tensor([[ True, False, False,  True]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 1.]]
+prediction reason: 
+ tensor([[ True, False, False, False, False, False, False, False, False, False,
+         False, False, False, False, False, False, False, False, False, False,
+         False]], device='cuda:0')
+ground truth: 
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]]
 

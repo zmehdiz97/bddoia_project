@@ -82,16 +82,13 @@ def test(cfg, args):
             img_cpu = dataBatch['img']
             imBatch = img_cpu.to(device)
             ori_img_cpu = dataBatch['ori_img']
-
             target_cpu = dataBatch['target']
             targetBatch = target_cpu.to(device)
             if cfg.MODEL.SIDE:
                 reason_cpu = dataBatch['reason']
                 reasonBatch = reason_cpu.to(device)
-                print(type(model(imBatch)))
-                print(len(model(imBatch)))
+                print(imBatch.shape, imBatch.min(), imBatch.max())
                 pred, pred_reason, detects = model(imBatch)
-
             else:
                 pred = model(imBatch)
 
@@ -320,6 +317,7 @@ def main():
 
     args = parser.parse_args()
     print(args)
+    print(type(args.opts), args.opts)
     cfg.merge_from_file(args.config_file)
     cfg.merge_from_list(args.opts)
     cfg.freeze()

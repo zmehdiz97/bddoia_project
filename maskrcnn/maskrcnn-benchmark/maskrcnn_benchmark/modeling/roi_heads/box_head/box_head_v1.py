@@ -15,7 +15,9 @@ class ROIBoxHead(torch.nn.Module):
 
     def __init__(self, cfg, in_channels):
         super(ROIBoxHead, self).__init__()
+        #self.training = True
         self.training = cfg.MODEL.BOX_HEAD_POSTPROCESSOR
+        print('ROIBoxHead', self.training)
         self.feature_extractor = make_roi_box_feature_extractor(cfg, in_channels)
         self.predictor = make_roi_box_predictor(
             cfg, self.feature_extractor.out_channels)
@@ -61,6 +63,8 @@ class ROIBoxHead(torch.nn.Module):
             proposals,
             dict(loss_classifier=loss_classifier, loss_box_reg=loss_box_reg),
         )
+
+
 
 
 def build_roi_box_head(cfg, in_channels):

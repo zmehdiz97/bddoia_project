@@ -64,16 +64,19 @@ class Baseline(nn.Module):
         # print(proposals)
         b_size = len(proposals)
         bbox_num = [proposals[i].__len__() for i in range(b_size)]
-        # print(bbox_num)
+        #print(bbox_num)
         if self.roi_heads:
 
             x, result, _ = self.roi_heads(features, proposals, targets)
             result, idx = result # result is a list of box, idx is a list of index, length is the same as the batch size.
+            #print('hello', result, idx)
+            #print(result)
             # print(result)
             # print(idx[0].shape, idx[1].shape)
             xx = []
             tmp = 0
             for i in range(b_size):
+                #xx.append(x[tmp: tmp + bbox_num[i]])# list of (N, 2048, 7, 7), N is the number of detected boxes.
                 xx.append(x[tmp: tmp + bbox_num[i]][idx[i]])# list of (N, 2048, 7, 7), N is the number of detected boxes.
                 tmp = bbox_num[i]
 
